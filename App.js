@@ -18,7 +18,7 @@ export default function App() {
               iconName = focused
                 ? 'book'
                 : 'book-outline';
-            } else if (route.name === 'CreateStory') {
+            } else if (route.name === 'Criar História') {
               iconName = focused ? 'create' : 'create-outline';
             }
             return <Ionicons name={iconName} size={size} color={color} />;
@@ -30,7 +30,7 @@ export default function App() {
         }}
       >
         <Tab.Screen name="Feed" component={Feed} />
-        <Tab.Screen name="CreateStory" component={CreateStory} />
+        <Tab.Screen name="Criar História" component={CreateStory} />
       </Tab.Navigator>
     </NavigationContainer>
   );
